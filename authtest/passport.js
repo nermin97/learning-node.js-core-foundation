@@ -29,9 +29,9 @@ passport.use(
         if (!user) {
           return done(null, false);
         }
-        /*if (!user.comparePassword(password)) {
+        if (!user.comparePassword(password)) {
           return done(null, false);
-        }*/
+        }
         return done(null, user);
       });
     }

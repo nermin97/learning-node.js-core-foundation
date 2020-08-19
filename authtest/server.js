@@ -31,7 +31,7 @@ mongoose.connect(
 app.use(express.static(__dirname + "/public"));
 app.engine("ejs", engine);
 app.set("view engine", "ejs");
-app.use(morgan("dev"));
+app.use(morgan("dev")); // za logovanje
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
